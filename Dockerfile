@@ -18,12 +18,10 @@ RUN npm run build
 
 # Stage 2: Serve the application
 FROM node:18 AS runner
-
-# Set the working directory
 WORKDIR /app
 
 # Copy the built application from the builder stage
-COPY --from=builder /app/.svelte-kit ./build
+COPY --from=builder /app/.svelte-kit/output ./build
 COPY --from=builder /app/package*.json ./
 
 # Install only production dependencies
@@ -33,4 +31,4 @@ RUN npm install --production
 EXPOSE 4173
 
 # Start the application
-CMD ["node", "build"]
+CMD ["node", "build/server/index.js"]
