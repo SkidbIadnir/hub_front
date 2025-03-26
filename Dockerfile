@@ -1,41 +1,34 @@
-# Stage 1: Build the application
+# ------------------------
+# Stage 1: Build the app
+# ------------------------
 FROM node:18-alpine AS builder
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package files
+# Install dependencies
 COPY package*.json ./
-
-# Install ALL dependencies (including dev dependencies)
 RUN npm ci
 
-# Copy the entire project
+# Copy source and build
 COPY . .
+RUN npm run build  # Creates /app/build/index.js
 
-# Build the application
-RUN npm run build
-
-# Stage 2: Create production image
+# ------------------------
+# Stage 2: Run the app
+# ------------------------
 FROM node:18-alpine AS runner
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package files
+# Only install production deps
 COPY package*.json ./
+RUN npm ci --omit=dev
 
-# Install ALL dependencies
-RUN npm ci
+# Copy build folder from builder
+COPY --from=builder /app/build ./build
 
-# Copy built artifacts from builder stage
-COPY --from=builder /app/.svelte-kit/output ./
-
-# Expose the port
+# Expose port
 EXPOSE 3000
 
-# Set environment to production
-ENV NODE_ENV=production
-
-# Command to run the application
-CMD ["node", "server/index.js"]
+# Run the server by specifying the actual JS file
+CMD ["node", "build/index.js"]
