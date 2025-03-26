@@ -23,7 +23,7 @@ FROM node:18 AS runner
 WORKDIR /app
 
 # Copy the built application from the builder stage
-COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/.svelte-kit ./dist
 COPY --from=builder /app/package*.json ./
 
 # Install only production dependencies
