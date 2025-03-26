@@ -34,4 +34,4 @@ EXPOSE 4173
 
 # Start the application using a static file server (e.g., serve or similar)
 RUN npm install -g serve
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "4173"]
