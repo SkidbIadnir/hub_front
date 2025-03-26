@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
+# Install ALL dependencies (including dev dependencies)
 RUN npm ci
 
 # Copy the entire project
@@ -25,8 +25,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm ci --only=production
+# Install ALL dependencies
+RUN npm ci
 
 # Copy built artifacts from builder stage
 COPY --from=builder /app/.svelte-kit/output ./
