@@ -13,7 +13,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Build the Vite application
+# Build the SvelteKit application
 RUN npm run build
 
 # Stage 2: Serve the application
@@ -23,7 +23,7 @@ FROM node:18 AS runner
 WORKDIR /app
 
 # Copy the built application from the builder stage
-COPY --from=builder /app/.svelte-kit ./dist
+COPY --from=builder /app/.svelte-kit ./build
 COPY --from=builder /app/package*.json ./
 
 # Install only production dependencies
@@ -32,6 +32,5 @@ RUN npm install --production
 # Expose the port the app runs on
 EXPOSE 4173
 
-# Start the application using a static file server (e.g., serve or similar)
-RUN npm install -g serve
-CMD ["serve", "-s", "dist", "-l", "4173"]
+# Start the application
+CMD ["node", "build"]
