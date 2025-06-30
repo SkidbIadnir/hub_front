@@ -1,0 +1,163 @@
+{
+	"nav": {
+		"about": "À propos",
+		"experience": "Expérience",
+		"projects": "Projets",
+		"skills": "Compétences",
+		"education": "Formation",
+		"contact": "Contact",
+		"hireMe": "Embauchez-moi"
+	},
+	"profile": {
+		"name": "Nicolas Jurdyc",
+		"title": "Développeur Full-Stack | Solutions IA et Technologies Web",
+		"email": "n.jurdyc@proton.me",
+		"phone": "+33 06 73 46 26 43",
+		"location": "259 rue Gilbert Descrottes, 69360 Solaize, France",
+		"bio": "Développeur full-stack avec une expérience pratique dans les applications basées sur l'IA et les technologies web modernes. Historique prouvé dans le développement de solutions IA prêtes pour la production utilisant React, TypeScript et Python. Passionné par les agents IA et les interfaces conversationnelles, avec une expérience dans la construction d'applications web évolutives de la conception au déploiement."
+	},
+	"sections": {
+		"about": {
+			"title": "À propos de moi",
+			"contactMe": "Me contacter",
+			"viewProjects": "Voir les projets",
+			"languages": "Langues",
+			"additionalStrengths": "Atouts supplémentaires"
+		},
+		"experience": {
+			"title": "Expérience professionnelle"
+		},
+		"projects": {
+			"title": "Projets",
+			"viewProject": "Voir le projet"
+		},
+		"skills": {
+			"title": "Compétences techniques"
+		},
+		"education": {
+			"title": "Formation et éducation"
+		},
+		"contact": {
+			"title": "Me contacter",
+			"email": "Email",
+			"phone": "Téléphone",
+			"location": "Localisation",
+			"sendEmail": "Envoyer un email",
+			"callMe": "M'appeler"
+		}
+	},
+	"skillCategories": {
+		"frontend": "Développement Frontend",
+		"backend": "Développement Backend",
+		"ai": "IA et Machine Learning",
+		"devops": "DevOps et Outils"
+	},
+	"skills": {
+		"typescript": "TypeScript/JavaScript",
+		"react": "React.js",
+		"nextjs": "Next.js",
+		"sveltekit": "SvelteKit",
+		"tailwindcss": "TailwindCSS",
+		"pwa": "Applications Web Progressives (PWA)",
+		"nodejs": "Node.js",
+		"nestjs": "TypeScript/NestJS",
+		"python": "Python",
+		"fastapi": "FastAPI",
+		"postgresql": "PostgreSQL",
+		"nosql": "Bases de données NoSQL",
+		"redis": "Redis",
+		"rag": "Génération Augmentée par Récupération (RAG)",
+		"llms": "Modèles de Langage Large (LLMs)",
+		"aiChat": "Applications de Chat IA",
+		"conversational": "Interfaces Conversationnelles",
+		"aws": "Services Cloud AWS",
+		"git": "Git",
+		"agile": "Développement Agile"
+	},
+	"experience": [
+		{
+			"title": "Développeur Département Innovation",
+			"company": "Blueway, Lyon France",
+			"period": "09/2023 - 09/2024",
+			"type": "Stage et CDD",
+			"responsibilities": [
+				"Développé une application de chat IA prête pour la production utilisant React et SvelteKit, implémentant des interfaces utilisateur conversationnelles de la conception au déploiement",
+				"Construit un système de Génération Augmentée par Récupération (RAG) utilisant Python et FastAPI, intégrant plusieurs LLMs pour des capacités d'agent IA améliorées",
+				"Créé une Application Web Progressive utilisant SvelteKit et TailwindCSS, en se concentrant sur l'optimisation de l'expérience utilisateur et les performances",
+				"Collaboré avec des équipes pluridisciplinaires pour livrer des solutions alimentées par l'IA, acquérant une expérience approfondie dans le développement et le déploiement d'agents IA"
+			]
+		},
+		{
+			"title": "Développeur Python",
+			"company": "ESI Group, Lyon France",
+			"period": "04/2022 - 08/2022",
+			"type": "Stage",
+			"responsibilities": [
+				"Optimisé des systèmes logiciels legacy améliorant les performances et la maintenabilité pour des applications de niveau entreprise",
+				"Développé une documentation technique complète assurant la qualité du code et le transfert de connaissances",
+				"Collaboré avec des équipes de développement internationales sur des projets d'amélioration logicielle, démontrant de solides compétences en communication en anglais"
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Master",
+			"institution": "Epitech Paris",
+			"year": "2018-2024",
+			"location": "Lyon/Berlin"
+		},
+		{
+			"degree": "Certification Développement de Jeux Vidéo et Game Design",
+			"institution": "Keimyung University",
+			"year": "2022-2023",
+			"location": "Daegu, Corée du Sud"
+		}
+	],
+	"certifications": [
+		{
+			"name": "Développement d'Agents IA",
+			"description": "Expérience pratique avec l'IA conversationnelle et les expériences utilisateur basées sur le chat"
+		},
+		{
+			"name": "Expérience Startup",
+			"description": "Prospéré dans un environnement dynamique avec un focus sur l'itération rapide et le déploiement"
+		},
+		{
+			"name": "Autonome",
+			"description": "Capacité démontrée à mener des projets de la conception à la production de manière indépendante"
+		},
+		{
+			"name": "Soucieux du détail",
+			"description": "Focus important sur la qualité du code, les tests et la documentation"
+		}
+	],
+	"projects": [
+		{
+			"name": "Système RAG alimenté par l'IA",
+			"description": "Conception et implémentation d'une solution IA de bout en bout avec interface de chat, intégrant plusieurs LLMs pour des capacités conversationnelles améliorées. Construction d'une architecture backend évolutive utilisant FastAPI et des frameworks web modernes.",
+			"company": "Blueway",
+			"technologies": ["Python", "FastAPI", "React", "LLMs", "RAG"]
+		},
+		{
+			"name": "Dynafood - Plateforme Full-Stack",
+			"description": "Projet de groupe de 2,5 ans où j'ai dirigé une équipe de développement agile pour une plateforme complète incluant application mobile, site web et extension de navigateur. Développement de systèmes backend associés avec un focus sur l'évolutivité et les performances.",
+			"technologies": ["Full-Stack", "Application Mobile", "Extension Navigateur", "Agile"]
+		},
+		{
+			"name": "Plateforme de Suivi de Statistiques",
+			"description": "Construction et déploiement d'une application web full-stack démontrant des compétences de développement réelles.",
+			"link": "https://stat.skidhub.fr/",
+			"technologies": ["Full-Stack", "Application Web", "Déploiement"]
+		},
+		{
+			"name": "Site Portfolio",
+			"description": "Un site portfolio responsive construit avec SvelteKit et TailwindCSS",
+			"link": "https://nicolas-dev.vercel.app/",
+			"technologies": ["SvelteKit", "TailwindCSS", "DaisyUI"]
+		}
+	],
+	"languages": [
+		{ "name": "Français", "level": "Natif" },
+		{ "name": "Anglais", "level": "Compétent (Lecture, Écriture, Expression orale)" }
+	]
+}

@@ -1,0 +1,163 @@
+{
+	"nav": {
+		"about": "About",
+		"experience": "Experience",
+		"projects": "Projects",
+		"skills": "Skills",
+		"education": "Education",
+		"contact": "Contact",
+		"hireMe": "Hire Me"
+	},
+	"profile": {
+		"name": "Nicolas Jurdyc",
+		"title": "Full-Stack Developer | AI Solutions & Web Technologies",
+		"email": "n.jurdyc@proton.me",
+		"phone": "+33 06 73 46 26 43",
+		"location": "259 rue Gilbert Descrottes, 69360 Solaize, France",
+		"bio": "Full-stack developer with hands-on experience in AI-driven applications and modern web technologies. Proven track record in developing production-ready AI solutions using React, TypeScript, and Python. Passionate about AI agents and conversational interfaces, with experience building scalable web applications from concept to deployment."
+	},
+	"sections": {
+		"about": {
+			"title": "About Me",
+			"contactMe": "Contact Me",
+			"viewProjects": "View Projects",
+			"languages": "Languages",
+			"additionalStrengths": "Additional Strengths"
+		},
+		"experience": {
+			"title": "Work Experience"
+		},
+		"projects": {
+			"title": "Projects",
+			"viewProject": "View Project"
+		},
+		"skills": {
+			"title": "Technical Skills"
+		},
+		"education": {
+			"title": "Education & Training"
+		},
+		"contact": {
+			"title": "Contact Me",
+			"email": "Email",
+			"phone": "Phone",
+			"location": "Location",
+			"sendEmail": "Send Email",
+			"callMe": "Call Me"
+		}
+	},
+	"skillCategories": {
+		"frontend": "Frontend Development",
+		"backend": "Backend Development",
+		"ai": "AI & Machine Learning",
+		"devops": "DevOps & Tools"
+	},
+	"skills": {
+		"typescript": "TypeScript/JavaScript",
+		"react": "React.js",
+		"nextjs": "Next.js",
+		"sveltekit": "SvelteKit",
+		"tailwindcss": "TailwindCSS",
+		"pwa": "Progressive Web Applications (PWA)",
+		"nodejs": "Node.js",
+		"nestjs": "TypeScript/NestJS",
+		"python": "Python",
+		"fastapi": "FastAPI",
+		"postgresql": "PostgreSQL",
+		"nosql": "NoSQL Databases",
+		"redis": "Redis",
+		"rag": "Retrieval-Augmented Generation (RAG)",
+		"llms": "Large Language Models (LLMs)",
+		"aiChat": "AI Chat Applications",
+		"conversational": "Conversational Interfaces",
+		"aws": "AWS Cloud Services",
+		"git": "Git",
+		"agile": "Agile Development"
+	},
+	"experience": [
+		{
+			"title": "Innovation Department Developer",
+			"company": "Blueway, Lyon France",
+			"period": "09/2023 - 09/2024",
+			"type": "Internship & Fixed-Term Contract",
+			"responsibilities": [
+				"Developed production-ready AI chat application using React and SvelteKit, implementing conversational user interfaces from concept to deployment",
+				"Built Retrieval-Augmented Generation (RAG) system using Python and FastAPI, integrating multiple LLMs for enhanced AI agent capabilities",
+				"Created Progressive Web Application using SvelteKit and TailwindCSS, focusing on user experience optimization and performance",
+				"Collaborated with cross-functional teams to deliver AI-powered solutions, gaining deep experience in AI agent development and deployment"
+			]
+		},
+		{
+			"title": "Python Developer",
+			"company": "ESI Group, Lyon France",
+			"period": "04/2022 - 08/2022",
+			"type": "Internship",
+			"responsibilities": [
+				"Optimized legacy software systems improving performance and maintainability for enterprise-level applications",
+				"Developed comprehensive technical documentation ensuring code quality and knowledge transfer",
+				"Collaborated with international development teams on software enhancement projects, demonstrating strong communication skills in English"
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Master's Degree",
+			"institution": "Epitech Paris",
+			"year": "2018-2024",
+			"location": "Lyon/Berlin"
+		},
+		{
+			"degree": "Video Game Development & Game Design Certification",
+			"institution": "Keimyung University",
+			"year": "2022-2023",
+			"location": "Daegu, South Korea"
+		}
+	],
+	"certifications": [
+		{
+			"name": "AI Agent Development",
+			"description": "Hands-on experience with conversational AI and chat-based user experiences"
+		},
+		{
+			"name": "Startup Experience",
+			"description": "Thrived in fast-paced environment with focus on rapid iteration and deployment"
+		},
+		{
+			"name": "Self-Starting",
+			"description": "Demonstrated ability to take projects from concept to production independently"
+		},
+		{
+			"name": "Detail-Oriented",
+			"description": "Strong focus on code quality, testing, and documentation"
+		}
+	],
+	"projects": [
+		{
+			"name": "AI-Powered RAG System",
+			"description": "Designed and implemented end-to-end AI solution with chat interface, integrating multiple LLMs for enhanced conversational capabilities. Built scalable backend architecture using FastAPI and modern web frameworks.",
+			"company": "Blueway",
+			"technologies": ["Python", "FastAPI", "React", "LLMs", "RAG"]
+		},
+		{
+			"name": "Dynafood - Full-Stack Platform",
+			"description": "2.5-year group project where I led agile development team for comprehensive platform including mobile app, website, and browser extension. Developed associated backend systems with focus on scalability and performance.",
+			"technologies": ["Full-Stack", "Mobile App", "Browser Extension", "Agile"]
+		},
+		{
+			"name": "Statistics Tracking Platform",
+			"description": "Built and deployed full-stack web application demonstrating real-world development skills.",
+			"link": "https://stat.skidhub.fr/",
+			"technologies": ["Full-Stack", "Web Application", "Deployment"]
+		},
+		{
+			"name": "Portfolio Website",
+			"description": "A responsive portfolio website built with SvelteKit and TailwindCSS",
+			"link": "https://nicolas-dev.vercel.app/",
+			"technologies": ["SvelteKit", "TailwindCSS", "DaisyUI"]
+		}
+	],
+	"languages": [
+		{ "name": "French", "level": "Native" },
+		{ "name": "English", "level": "Proficient (Read, Write, Speak)" }
+	]
+}

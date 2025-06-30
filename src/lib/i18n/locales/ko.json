@@ -1,0 +1,164 @@
+{
+	"nav": {
+		"about": "소개",
+		"experience": "경력",
+		"projects": "프로젝트",
+		"skills": "기술",
+		"education": "학력",
+		"contact": "연락처",
+		"hireMe": "채용 문의"
+	},
+	"profile": {
+		"name": "니콜라 쥬르딕",
+		"title": "풀스택 개발자 | AI 솔루션 & 웹 기술",
+		"email": "n.jurdyc@proton.me",
+		"phone": "+33 06 73 46 26 43",
+		"location": "259 rue Gilbert Descrottes, 69360 Solaize, France",
+		"bio": "AI 기반 애플리케이션과 현대적인 웹 기술에 대한 실무 경험을 갖춘 풀스택 개발자입니다. React, TypeScript, Python을 사용하여 프로덕션 준비 AI 솔루션을 개발한 검증된 경력을 보유하고 있습니다. AI 에이전트와 대화형 인터페이스에 열정을 갖고 있으며, 개념부터 배포까지 확장 가능한 웹 애플리케이션 구축 경험이 있습니다."
+	},
+	"sections": {
+		"about": {
+			"title": "소개",
+			"contactMe": "연락하기",
+			"viewProjects": "프로젝트 보기",
+			"languages": "언어",
+			"additionalStrengths": "추가 강점"
+		},
+		"experience": {
+			"title": "업무 경험"
+		},
+		"projects": {
+			"title": "프로젝트",
+			"viewProject": "프로젝트 보기"
+		},
+		"skills": {
+			"title": "기술 스킬"
+		},
+		"education": {
+			"title": "교육 & 훈련"
+		},
+		"contact": {
+			"title": "연락처",
+			"email": "이메일",
+			"phone": "전화",
+			"location": "위치",
+			"sendEmail": "이메일 보내기",
+			"callMe": "전화하기"
+		}
+	},
+	"skillCategories": {
+		"frontend": "프론트엔드 개발",
+		"backend": "백엔드 개발",
+		"ai": "AI & 머신러닝",
+		"devops": "DevOps & 도구"
+	},
+	"skills": {
+		"typescript": "TypeScript/JavaScript",
+		"react": "React.js",
+		"nextjs": "Next.js",
+		"sveltekit": "SvelteKit",
+		"tailwindcss": "TailwindCSS",
+		"pwa": "프로그레시브 웹 애플리케이션 (PWA)",
+		"nodejs": "Node.js",
+		"nestjs": "TypeScript/NestJS",
+		"python": "Python",
+		"fastapi": "FastAPI",
+		"postgresql": "PostgreSQL",
+		"nosql": "NoSQL 데이터베이스",
+		"redis": "Redis",
+		"rag": "검색 증강 생성 (RAG)",
+		"llms": "대형 언어 모델 (LLMs)",
+		"aiChat": "AI 채팅 애플리케이션",
+		"conversational": "대화형 인터페이스",
+		"aws": "AWS 클라우드 서비스",
+		"git": "Git",
+		"agile": "애자일 개발"
+	},
+	"experience": [
+		{
+			"title": "혁신 부서 개발자",
+			"company": "Blueway, 리옹 프랑스",
+			"period": "2023년 9월 - 2024년 9월",
+			"type": "인턴십 & 정기계약",
+			"responsibilities": [
+				"React와 SvelteKit을 사용하여 프로덕션 준비 AI 채팅 애플리케이션을 개발하고, 개념부터 배포까지 대화형 사용자 인터페이스를 구현했습니다",
+				"Python과 FastAPI를 사용하여 검색 증강 생성(RAG) 시스템을 구축하고, 향상된 AI 에이전트 기능을 위해 여러 LLM을 통합했습니다",
+				"SvelteKit과 TailwindCSS를 사용하여 프로그레시브 웹 애플리케이션을 제작하고, 사용자 경험 최적화와 성능에 중점을 두었습니다",
+				"AI 기반 솔루션을 제공하기 위해 다기능 팀과 협업하고, AI 에이전트 개발 및 배포에 대한 깊은 경험을 얻었습니다"
+			]
+		},
+		{
+			"title": "Python 개발자",
+			"company": "ESI Group, 리옹 프랑스",
+			"period": "2022년 4월 - 2022년 8월",
+			"type": "인턴십",
+			"responsibilities": [
+				"엔터프라이즈급 애플리케이션의 성능과 유지보수성을 개선하여 레거시 소프트웨어 시스템을 최적화했습니다",
+				"코드 품질과 지식 전수를 보장하는 포괄적인 기술 문서를 개발했습니다",
+				"소프트웨어 개선 프로젝트에서 국제 개발팀과 협업하며 영어로 강력한 커뮤니케이션 능력을 입증했습니다"
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "석사 학위",
+			"institution": "Epitech Paris",
+			"year": "2018-2024",
+			"location": "리옹/베를린"
+		},
+		{
+			"degree": "비디오 게임 개발 & 게임 디자인 인증",
+			"institution": "계명대학교",
+			"year": "2022-2023",
+			"location": "대구, 대한민국"
+		}
+	],
+	"certifications": [
+		{
+			"name": "AI 에이전트 개발",
+			"description": "대화형 AI 및 채팅 기반 사용자 경험에 대한 실무 경험"
+		},
+		{
+			"name": "스타트업 경험",
+			"description": "빠른 반복과 배포에 중점을 둔 빠른 환경에서 성공적으로 활동"
+		},
+		{
+			"name": "자기주도적",
+			"description": "프로젝트를 개념부터 프로덕션까지 독립적으로 수행할 수 있는 능력을 입증"
+		},
+		{
+			"name": "세심함",
+			"description": "코드 품질, 테스팅, 문서화에 대한 강한 집중력"
+		}
+	],
+	"projects": [
+		{
+			"name": "AI 기반 RAG 시스템",
+			"description": "채팅 인터페이스를 갖춘 엔드투엔드 AI 솔루션을 설계하고 구현했으며, 향상된 대화 기능을 위해 여러 LLM을 통합했습니다. FastAPI와 현대적인 웹 프레임워크를 사용하여 확장 가능한 백엔드 아키텍처를 구축했습니다.",
+			"company": "Blueway",
+			"technologies": ["Python", "FastAPI", "React", "LLMs", "RAG"]
+		},
+		{
+			"name": "Dynafood - 풀스택 플랫폼",
+			"description": "모바일 앱, 웹사이트, 브라우저 확장 프로그램을 포함한 종합 플랫폼을 위해 애자일 개발팀을 이끈 2.5년 그룹 프로젝트입니다. 확장성과 성능에 중점을 둔 관련 백엔드 시스템을 개발했습니다.",
+			"technologies": ["풀스택", "모바일 앱", "브라우저 확장", "애자일"]
+		},
+		{
+			"name": "통계 추적 플랫폼",
+			"description": "실제 개발 스킬을 보여주는 풀스택 웹 애플리케이션을 구축하고 배포했습니다.",
+			"link": "https://stat.skidhub.fr/",
+			"technologies": ["풀스택", "웹 애플리케이션", "배포"]
+		},
+		{
+			"name": "포트폴리오 웹사이트",
+			"description": "SvelteKit과 TailwindCSS로 구축된 반응형 포트폴리오 웹사이트",
+			"link": "https://nicolas-dev.vercel.app/",
+			"technologies": ["SvelteKit", "TailwindCSS", "DaisyUI"]
+		}
+	],
+	"languages": [
+		{ "name": "프랑스어", "level": "모국어" },
+		{ "name": "영어", "level": "능숙함 (읽기, 쓰기, 말하기)" },
+		{ "name": "한국어", "level": "기초" }
+	]
+}

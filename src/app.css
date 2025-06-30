@@ -3,6 +3,27 @@
 @plugin '@tailwindcss/typography';
 @plugin 'daisyui';
 
+/* Enhanced font stack for better CJK (Chinese, Japanese, Korean) support */
+* {
+  font-family: 
+    /* System UI fonts with CJK support */
+    -apple-system, BlinkMacSystemFont, 
+    /* Windows with good CJK support */
+    "Segoe UI", "Malgun Gothic", 
+    /* macOS with CJK support */
+    "SF Pro Display", "SF Pro Text", "Helvetica Neue", 
+    /* Cross-platform with CJK support */
+    "Noto Sans", "Noto Sans CJK KR", "Noto Sans CJK JP", "Noto Sans CJK SC",
+    /* Korean specific fonts */
+    "Apple SD Gothic Neo", "Nanum Gothic", "Dotum",
+    /* Japanese specific fonts */
+    "Hiragino Sans", "Yu Gothic UI", "Meiryo",
+    /* Chinese specific fonts */
+    "PingFang SC", "Microsoft YaHei",
+    /* Fallbacks */
+    Arial, sans-serif;
+}
+
 @plugin "daisyui/theme" {
     name: "skidHub";
     default: false;
