@@ -33,6 +33,7 @@
 			website.
 		</p>
 		<p class="mb-4">Thank you for your understanding!</p>
+		<a class="btn btn-primary" href="/dev"> Go to the developer profile </a>
 		<!-- Uncomment the following section to display a welcome message and language selection -->
 		<!-- {#if localLanguage === 'en'}
 			<h1 class="mb-4 text-4xl font-bold">Welcome to my portfolio</h1>

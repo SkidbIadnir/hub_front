@@ -1,84 +1,147 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	// Mock portfolio data
+	// Portfolio data
 	const profile = {
 		name: 'Nicolas Jurdyc',
-		title: 'Web Fullstack Developer',
+		title: 'Full-Stack Developer | AI Solutions & Web Technologies',
 		email: 'n.jurdyc@proton.me',
-		phone: '+33 6 73 46 26 43',
-		location: 'Lyon, France',
-		bio: 'I am a recently graduated computer science student with a specialization in web development. Throughout my academic journey, I have had the opportunity to work with various technologies and programming languages. Currently, I am actively seeking a full time job.'
+		phone: '+33 06 73 46 26 43',
+		location: '259 rue Gilbert Descrottes, 69360 Solaize, France',
+		bio: 'Full-stack developer with hands-on experience in AI-driven applications and modern web technologies. Proven track record in developing production-ready AI solutions using React, TypeScript, and Python. Passionate about AI agents and conversational interfaces, with experience building scalable web applications from concept to deployment.'
 	};
 
 	const skills = [
 		{
-			category: 'Web Programming',
-			items: ['JavaScript', 'TypeScript', 'NodeJs', 'SvelteKit', 'Flutter']
+			category: 'Frontend Development',
+			items: [
+				'TypeScript/JavaScript',
+				'React.js',
+				'Next.js',
+				'SvelteKit',
+				'TailwindCSS',
+				'Progressive Web Applications (PWA)'
+			]
 		},
-		{ category: 'Software Programming', items: ['C++', 'C#', 'Python'] }
+		{
+			category: 'Backend Development',
+			items: [
+				'Node.js',
+				'TypeScript/NestJS',
+				'Python',
+				'FastAPI',
+				'PostgreSQL',
+				'NoSQL Databases',
+				'Redis'
+			]
+		},
+		{
+			category: 'AI & Machine Learning',
+			items: [
+				'Retrieval-Augmented Generation (RAG)',
+				'Large Language Models (LLMs)',
+				'AI Chat Applications',
+				'Conversational Interfaces'
+			]
+		},
+		{
+			category: 'DevOps & Tools',
+			items: ['AWS Cloud Services', 'Git', 'Agile Development']
+		}
 	];
 
 	const experience = [
 		{
-			title: 'Web & AI Developer',
-			company: 'Innovation Department Blueway Lyon',
+			title: 'Innovation Department Developer',
+			company: 'Blueway, Lyon France',
 			period: '09/2023 - 09/2024',
+			type: 'Internship & Fixed-Term Contract',
 			responsibilities: [
-				'Prototyping project using Large Language Model AI (GPT, Mistral)',
-				'Creating the web application to access the API',
-				'Deploying the application for intern testing',
-				'Develop and deploy a Progressive Web App using SvelteKit, NodeJs (express)'
+				'Developed production-ready AI chat application using React and SvelteKit, implementing conversational user interfaces from concept to deployment',
+				'Built Retrieval-Augmented Generation (RAG) system using Python and FastAPI, integrating multiple LLMs for enhanced AI agent capabilities',
+				'Created Progressive Web Application using SvelteKit and TailwindCSS, focusing on user experience optimization and performance',
+				'Collaborated with cross-functional teams to deliver AI-powered solutions, gaining deep experience in AI agent development and deployment'
 			]
 		},
 		{
-			title: 'Stage Developer Python',
-			company: 'ESI Group',
-			period: '04/2022 - 06/2022',
-			responsibilities: ['Legacy code optimization', 'Implementing new features', 'Documenting']
+			title: 'Python Developer',
+			company: 'ESI Group, Lyon France',
+			period: '04/2022 - 08/2022',
+			type: 'Internship',
+			responsibilities: [
+				'Optimized legacy software systems improving performance and maintainability for enterprise-level applications',
+				'Developed comprehensive technical documentation ensuring code quality and knowledge transfer',
+				'Collaborated with international development teams on software enhancement projects, demonstrating strong communication skills in English'
+			]
 		}
 	];
 
 	const education = [
 		{
-			degree: 'Information Technologies Expert',
+			degree: "Master's Degree",
 			institution: 'Epitech Paris',
-			year: '2024'
+			year: '2018-2024',
+			location: 'Lyon/Berlin'
 		},
 		{
-			degree: 'Game Programming and Game Design',
-			institution: 'Keimyung University Daegu, South Korea',
-			year: '2022-2023'
-		},
-		{
-			degree: 'Scientific Highschool Diploma',
-			institution: '',
-			year: '2018'
+			degree: 'Video Game Development & Game Design Certification',
+			institution: 'Keimyung University',
+			year: '2022-2023',
+			location: 'Daegu, South Korea'
 		}
 	];
 
 	const certifications = [
-		{ name: 'WSET Spirit LVL 1', year: '2024' },
-		{ name: 'WSET Spirit LVL 2', year: 'Ongoing' }
+		{
+			name: 'AI Agent Development',
+			description: 'Hands-on experience with conversational AI and chat-based user experiences'
+		},
+		{
+			name: 'Startup Experience',
+			description: 'Thrived in fast-paced environment with focus on rapid iteration and deployment'
+		},
+		{
+			name: 'Self-Starting',
+			description: 'Demonstrated ability to take projects from concept to production independently'
+		},
+		{
+			name: 'Detail-Oriented',
+			description: 'Strong focus on code quality, testing, and documentation'
+		}
 	];
 
 	const projects = [
 		{
-			name: 'Personal Portfolio Website',
+			name: 'AI-Powered RAG System',
+			description:
+				'Designed and implemented end-to-end AI solution with chat interface, integrating multiple LLMs for enhanced conversational capabilities. Built scalable backend architecture using FastAPI and modern web frameworks.',
+			company: 'Blueway',
+			technologies: ['Python', 'FastAPI', 'React', 'LLMs', 'RAG']
+		},
+		{
+			name: 'Dynafood - Full-Stack Platform',
+			description:
+				'2.5-year group project where I led agile development team for comprehensive platform including mobile app, website, and browser extension. Developed associated backend systems with focus on scalability and performance.',
+			technologies: ['Full-Stack', 'Mobile App', 'Browser Extension', 'Agile']
+		},
+		{
+			name: 'Statistics Tracking Platform',
+			description:
+				'Built and deployed full-stack web application demonstrating real-world development skills.',
+			link: 'https://stat.skidhub.fr/',
+			technologies: ['Full-Stack', 'Web Application', 'Deployment']
+		},
+		{
+			name: 'Portfolio Website',
 			description: 'A responsive portfolio website built with SvelteKit and TailwindCSS',
 			link: 'https://nicolas-dev.vercel.app/',
 			technologies: ['SvelteKit', 'TailwindCSS', 'DaisyUI']
-		},
-		{
-			name: 'AI-Powered Assistant',
-			description: 'A web application leveraging LLM APIs to create intelligent user interactions',
-			technologies: ['NodeJS', 'Express', 'GPT API']
 		}
 	];
 
 	const languages = [
-		{ name: 'French', level: 'Mother tongue' },
-		{ name: 'English', level: 'Understood, written, talked' }
+		{ name: 'French', level: 'Native' },
+		{ name: 'English', level: 'Proficient (Read, Write, Speak)' }
 	];
 
 	let isMenuOpen = false;
@@ -293,12 +356,12 @@
 				</div>
 				<div class="card bg-base-200">
 					<div class="card-body">
-						<h2 class="card-title text-primary">Certifications</h2>
-						<ul class="mt-4 space-y-2">
+						<h2 class="card-title text-primary">Additional Strengths</h2>
+						<ul class="mt-4 space-y-3">
 							{#each certifications as cert}
-								<li class="flex items-center justify-between">
-									<span>{cert.name}</span>
-									<span class="badge badge-primary">{cert.year}</span>
+								<li class="border-primary border-l-4 pl-4">
+									<div class="font-semibold">{cert.name}</div>
+									<div class="text-sm opacity-75">{cert.description}</div>
 								</li>
 							{/each}
 						</ul>
@@ -317,7 +380,12 @@
 							<h3 class="card-title text-xl">{job.title}</h3>
 							<div class="flex flex-col md:flex-row md:items-center md:justify-between">
 								<p class="text-primary font-semibold">{job.company}</p>
-								<p class="badge badge-outline">{job.period}</p>
+								<div class="flex flex-col gap-2 md:flex-row md:items-center">
+									<p class="badge badge-outline">{job.period}</p>
+									{#if job.type}
+										<p class="badge badge-secondary">{job.type}</p>
+									{/if}
+								</div>
 							</div>
 							<div class="divider"></div>
 							<ul class="list-disc space-y-2 pl-5">
@@ -339,6 +407,9 @@
 					<div class="card bg-base-200 shadow-xl">
 						<div class="card-body">
 							<h3 class="card-title text-xl">{project.name}</h3>
+							{#if project.company}
+								<p class="text-primary font-semibold">{project.company}</p>
+							{/if}
 							<p>{project.description}</p>
 							<div class="my-4 flex flex-wrap gap-2">
 								{#each project.technologies as tech}
@@ -394,51 +465,6 @@
 					</div>
 				{/each}
 			</div>
-
-			<div class="mt-10">
-				<div class="card bg-base-200 shadow-xl">
-					<div class="card-body">
-						<h3 class="card-title mb-4 text-xl">Skills Progress</h3>
-						<div class="space-y-4">
-							<div>
-								<div class="mb-1 flex justify-between">
-									<span>JavaScript/TypeScript</span>
-									<span>90%</span>
-								</div>
-								<progress class="progress progress-primary" value="90" max="100"></progress>
-							</div>
-							<div>
-								<div class="mb-1 flex justify-between">
-									<span>SvelteKit</span>
-									<span>85%</span>
-								</div>
-								<progress class="progress progress-primary" value="85" max="100"></progress>
-							</div>
-							<div>
-								<div class="mb-1 flex justify-between">
-									<span>NodeJS/Express</span>
-									<span>80%</span>
-								</div>
-								<progress class="progress progress-primary" value="80" max="100"></progress>
-							</div>
-							<div>
-								<div class="mb-1 flex justify-between">
-									<span>Python</span>
-									<span>75%</span>
-								</div>
-								<progress class="progress progress-primary" value="75" max="100"></progress>
-							</div>
-							<div>
-								<div class="mb-1 flex justify-between">
-									<span>C++</span>
-									<span>65%</span>
-								</div>
-								<progress class="progress progress-primary" value="65" max="100"></progress>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<!-- Education Section -->
@@ -451,28 +477,16 @@
 							<h3 class="card-title text-xl">{edu.degree}</h3>
 							<div class="flex flex-col md:flex-row md:items-center md:justify-between">
 								<p class="text-primary font-semibold">{edu.institution}</p>
-								<p class="badge badge-outline">{edu.year}</p>
+								<div class="flex flex-col gap-2 md:flex-row md:items-center">
+									<p class="badge badge-outline">{edu.year}</p>
+									{#if edu.location}
+										<p class="badge badge-secondary">{edu.location}</p>
+									{/if}
+								</div>
 							</div>
 						</div>
 					</div>
 				{/each}
-
-				{#if certifications.length > 0}
-					<div class="card bg-base-200 mt-8 shadow-xl">
-						<div class="card-body">
-							<h3 class="card-title text-xl">Certifications</h3>
-							<div class="divider"></div>
-							<ul class="space-y-3">
-								{#each certifications as cert}
-									<li class="flex items-center justify-between">
-										<span class="font-medium">{cert.name}</span>
-										<span class="badge badge-primary">{cert.year}</span>
-									</li>
-								{/each}
-							</ul>
-						</div>
-					</div>
-				{/if}
 			</div>
 		</section>
 
@@ -561,79 +575,8 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="card bg-base-200 mt-8 shadow-xl">
-				<div class="card-body">
-					<h3 class="card-title mb-4 text-xl">Send me a message</h3>
-					<form class="space-y-4">
-						<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-							<div class="form-control">
-								<label class="label">
-									<span class="label-text">Name</span>
-								</label>
-								<input type="text" placeholder="Your name" class="input input-bordered" />
-							</div>
-							<div class="form-control">
-								<label class="label">
-									<span class="label-text">Email</span>
-								</label>
-								<input type="email" placeholder="Your email" class="input input-bordered" />
-							</div>
-						</div>
-						<div class="form-control">
-							<label class="label">
-								<span class="label-text">Subject</span>
-							</label>
-							<input type="text" placeholder="Message subject" class="input input-bordered" />
-						</div>
-						<div class="form-control">
-							<label class="label">
-								<span class="label-text">Message</span>
-							</label>
-							<textarea class="textarea textarea-bordered h-32" placeholder="Your message..."
-							></textarea>
-						</div>
-						<div class="form-control mt-6">
-							<button class="btn btn-primary">Send Message</button>
-						</div>
-					</form>
-				</div>
-			</div>
 		</section>
 	</main>
-
-	<!-- Footer -->
-	<footer class="footer bg-base-200 text-base-content mt-16 p-10">
-		<aside>
-			<p class="text-xl font-bold">{profile.name}</p>
-			<p>{profile.title}</p>
-			<p class="text-sm opacity-75">© {new Date().getFullYear()} - All rights reserved</p>
-		</aside>
-		<nav>
-			<header class="footer-title">Portfolio</header>
-			<button class="link link-hover" on:click={() => scrollToSection('about')}>About</button>
-			<button class="link link-hover" on:click={() => scrollToSection('experience')}
-				>Experience</button
-			>
-			<button class="link link-hover" on:click={() => scrollToSection('projects')}>Projects</button>
-		</nav>
-		<nav>
-			<header class="footer-title">Skills & Education</header>
-			<button class="link link-hover" on:click={() => scrollToSection('skills')}>Skills</button>
-			<button class="link link-hover" on:click={() => scrollToSection('education')}
-				>Education</button
-			>
-		</nav>
-		<nav>
-			<header class="footer-title">Contact</header>
-			<button class="link link-hover" on:click={() => scrollToSection('contact')}>Contact Me</button
-			>
-			<a href={`mailto:${profile.email}`} class="link link-hover">{profile.email}</a>
-			<a href={`tel:${profile.phone.replace(/\s+/g, '')}`} class="link link-hover"
-				>{profile.phone}</a
-			>
-		</nav>
-	</footer>
 </div>
 
 <style>
