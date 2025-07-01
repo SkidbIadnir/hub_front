@@ -159,5 +159,22 @@
 	"languages": [
 		{ "name": "Français", "level": "Natif" },
 		{ "name": "Anglais", "level": "Compétent (Lecture, Écriture, Expression orale)" }
-	]
+	],
+	"welcome": {
+		"title": "Bienvenue",
+		"subtitle": "Choisissez votre aventure et découvrez mon univers",
+		"footer": "Ces deux mondes représentent différentes facettes de ma passion et de mon expertise. N'hésitez pas à explorer les deux !"
+	},
+	"profiles": {
+		"developer": {
+			"title": "Développeur",
+			"description": "Explorez mon parcours technique, mes projets et mes aventures de codage. Découvrez les outils, frameworks et solutions que j'ai créés.",
+			"cta": "Entrer dans le Monde Dev"
+		},
+		"spirits": {
+			"title": "Passionné de Spiritueux",
+			"description": "Plongez dans ma passion pour les spiritueux fins, les dégustations et l'art de la distillation. Découvrez mon voyage à travers les saveurs et l'artisanat.",
+			"cta": "Entrer dans le Monde des Spiritueux"
+		}
+	}
 }

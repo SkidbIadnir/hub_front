@@ -9,5 +9,5 @@ export const load = async () => {
 	}
 
 	// Redirect to language-specific route
-	throw redirect(302, `/${language}/dev`);
+	// throw redirect(302, `/${language}/dev`);
 };

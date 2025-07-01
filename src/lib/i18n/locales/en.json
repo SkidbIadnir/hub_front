@@ -159,5 +159,22 @@
 	"languages": [
 		{ "name": "French", "level": "Native" },
 		{ "name": "English", "level": "Proficient (Read, Write, Speak)" }
-	]
+	],
+	"welcome": {
+		"title": "Welcome",
+		"subtitle": "Choose your adventure and discover my world",
+		"footer": "Both worlds represent different facets of my passion and expertise. Feel free to explore both!"
+	},
+	"profiles": {
+		"developer": {
+			"title": "Developer",
+			"description": "Explore my technical journey, projects, and coding adventures. Discover the tools, frameworks, and solutions I've built.",
+			"cta": "Enter Dev World"
+		},
+		"spirits": {
+			"title": "Spirits Enthusiast",
+			"description": "Dive into my passion for fine spirits, tastings, and the art of distillation. Experience my journey through flavors and craftsmanship.",
+			"cta": "Enter Spirits World"
+		}
+	}
 }
